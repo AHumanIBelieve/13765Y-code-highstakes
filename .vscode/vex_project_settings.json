@@ -1,0 +1,18 @@
+{
+	"extension": {
+		"version": "0.6.0",
+		"json": 2
+	},
+	"project": {
+		"name": "2425highstakes-13765y",
+		"description": "Code for 13765Y MTS_CtrlAltDefeat's bot for the 2024-25 V5RC High Stakes season.",
+		"creationDate": "10/21/2024, 10:46:11 AM",
+		"platform": "V5",
+		"language": "python",
+		"slot": 1,
+		"sdkVersion": "V5_1_0_1_19",
+		"python": {
+			"main": "src/main.py"
+		}
+	}
+}
