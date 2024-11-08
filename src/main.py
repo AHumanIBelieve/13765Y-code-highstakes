@@ -31,7 +31,7 @@ def drive():
 #process input from left stick
 def getInput():
     vals = [controller.axis3.value(), controller.axis2.value()] #axis3 gets left input, axis2 gets right input
-    for i in vals: # goes through the vals array, checks if the value is between -10 and 10, and if it is, sets it to 0
+    for i in vals: # goes through the vals array, checks if -10<value<10, and if it is, sets it to 0
         if i > -10 and i<10:
             i=0
     return vals
