@@ -28,8 +28,9 @@ counter = 0
 # DRIVE CODE
 def drive():
     while(True):
+        controller.screen.clear_screen()
         vals = getDriveInput() #  gets input as an array
-        controller.screen.print(vals[0], " ", vals[1])
+        controller.screen.print("L:", vals[0], " R:", vals[1])
         left_drive_smart.spin(FORWARD,vals[0],PERCENT) #  spins left side of the drivebase
         right_drive_smart.spin(REVERSE, vals[1], PERCENT) #  spins right side of the drivebase
         sleep(10, MSEC)
@@ -37,11 +38,7 @@ def drive():
 # process input from sticks 
 def getDriveInput():
     global counter
-    brain.screen.set_cursor(0, 0)
-    controller.screen.set_cursor(1,1)
     vals = [controller.axis3.value(), controller.axis2.value()] # axis3 gets left input, axis2 gets right input
-    #brain.screen.print(counter, " controller vals: ", vals[0], ", ", vals[1])
-    #controller.screen.print(counter, " vals: ", vals[0], ", ", vals[1])
     for i in vals: # goes through the vals array, checks if -10<value<10, and if it is, sets it to 0
         if i > -10 and i<10:
             i=0
