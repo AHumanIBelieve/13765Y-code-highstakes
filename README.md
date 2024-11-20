@@ -10,3 +10,12 @@
 ## v1.0 7/11/24
 - Added linear drive code
 - assigned ports
+  
+## v1.1 18/11/24
+- Added intake code
+- added loader code
+- NOTE: motors not finalised.
+  
+## v1.2 20/11/24
+- fixed all motor code to use `spin()` instead of `set_velocity()` as this doesn't work.
+- added keybinds to make sure that motors work
