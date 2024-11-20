@@ -17,6 +17,7 @@
 - fixed all motor code to use `spin()` instead of `set_velocity()` as this doesn't work.
 - added keybinds to make sure that motors work
 
+## License
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
